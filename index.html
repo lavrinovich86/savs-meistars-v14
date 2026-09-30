@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f5f4ee">
+<meta name="description" content="SAVS meistars — būvdarbi, pārbūve, atjaunošana, būvdarbu vadība un elektronisko sakaru tīkli. Salaspils, būvkomersanta reģ. Nr. 10000-R.">
+<title>SAVS meistars — Labs darbs. Stingrs pamats.</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/manrope-bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" as="image" href="assets/fasade.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+<script src="architecture.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#saturs">Pāriet uz saturu</a>
+
+<header class="header wrap">
+  <a class="brand" href="#" aria-label="SAVS meistars — sākums"><svg class="brand-logo" viewBox="0 0 140 150" width="112" height="120" aria-hidden="true" focusable="false"><path class="logo-roof" pathLength="1" d="M13 78 70 15l57 63h-19" fill="none" stroke="#93948f" stroke-width="6" stroke-linejoin="round"/><path class="logo-roof logo-chimney" pathLength="1" d="M32 56V18h13v22" fill="none" stroke="#93948f" stroke-width="6" stroke-linejoin="round"/><path class="logo-badge" fill="#b82d28" d="M29 67h82v45H29z"/><text class="logo-savs" x="34" y="103" fill="#fff" font-family="Arial Narrow,Arial,sans-serif" font-weight="900" font-size="38" textLength="72" lengthAdjust="spacingAndGlyphs">SAVS</text><text class="logo-word" x="11" y="141" fill="#777974" font-family="Arial,sans-serif" font-size="25" textLength="118" lengthAdjust="spacingAndGlyphs">meistars</text></svg><span class="brand-note">Būvējam ar atbildību.<br>Strādājam ar pārliecību.</span></a>
+  <nav id="navigation" aria-label="Galvenā navigācija">
+    <a href="#pakalpojumi">Pakalpojumi</a>
+    <a href="#par-mums">Par mums</a>
+    <a href="#objekti">Objekti</a>
+    <a href="#partneri">Partneri</a>
+    <a href="#kontakti">Kontakti</a>
+  </nav>
+  <a class="header-call" href="tel:+37129354519"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 4 1 1 5-3 2a15 15 0 0 0 6 6l2-3 5 1 1 4c-1 6-9 2-13-2S1 4 5 3Z"/></svg>29 354 519</a>
+  <button class="menu" aria-expanded="false" aria-controls="navigation" aria-label="Atvērt izvēlni"><span></span><span></span><span></span></button>
+</header>
+
+<main id="saturs" tabindex="-1">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy wrap">
+    <div class="hero-heading">
+      <p class="hero-overline">No pirmās līnijas līdz pēdējai detaļai.</p>
+      <h1 id="hero-title">Labs darbs.<br>Stingrs pamats.</h1>
+    </div>
+    <div class="hero-intro">
+      <p>No pirmās ieceres līdz paveiktam darbam. Būvējam, atjaunojam un vadām darbus ar rūpību pret katru detaļu.</p>
+      <a class="button hero-button" href="#kontakti">Pārrunāsim jūsu ieceri <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+    </div>
+  </div>
+  <div id="architecture" class="architecture" data-state="loading" data-phase="drawing" data-reveal="waiting">
+    <div class="architecture-stage">
+      <picture class="architecture-fallback"><source srcset="assets/fasade.webp" type="image/webp"><img src="assets/fasade.jpg" width="1905" height="1429" alt="Divstāvu ēka ar oranžu un brūnu fasādi, stikla ieeju un bruģētu autostāvvietu" fetchpriority="high"></picture>
+      <canvas id="building-canvas" role="img" aria-label="Ēkas arhitektūras modelis: rasējums pārtop telpiskā ēkā ar oranžiem apjomiem, brūnu augšstāvu un stiklotu ieeju."></canvas>
+      <div class="architecture-topline" aria-hidden="true"><span>No ieceres līdz ēkai</span><span>SAVS MEISTARS / 014</span></div>
+      <div class="architecture-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="architecture-axis" aria-hidden="true"><span>2D</span><span class="architecture-axis-line"></span><span>3D</span></div>
+      <figure class="architecture-reference" aria-hidden="true">
+        <img src="assets/fasade.webp" width="1905" height="1429" alt="">
+        <figcaption><span>01 / Ieceres pamats</span><span>Īstā ēka</span></figcaption>
+      </figure>
+      <div class="architecture-bottomline" aria-hidden="true">
+        <p class="architecture-caption"><span class="caption-drawing">Viss sākas ar līniju.</span><span class="caption-build">Iecere iegūst formu.</span><span class="caption-complete">Detaļas veido raksturu.</span></p>
+        <ol class="architecture-steps">
+          <li data-step="drawing"><span>01</span>Rasējums</li>
+          <li data-step="build"><span>02</span>Apjoms</li>
+          <li data-step="complete"><span>03</span>Ēka</li>
+        </ol>
+        <div class="architecture-progress-track"><span id="architecture-progress"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-footnote wrap">
+    <div class="experience"><strong>2012.</strong><span>Būvkomersantu<br>reģistrā kopš 2012. gada</span></div>
+    <a class="photo-link" href="#objekti">Apskatīt objektus <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
+  </div>
+  <div class="expertise wrap"><span>Būvdarbi</span><span>Pārbūve un atjaunošana</span><span>Būvdarbu vadība</span><span>Sakaru tīkli</span></div>
+</section>
+
+<section class="services wrap section" id="pakalpojumi">
+  <div class="section-heading"><h2>Ieceres mainās.<br>Meistarība paliek.</h2><p>No ēkas atjaunošanas līdz sakaru tīklam — tehniski pārdomāti risinājumi un skaidra darbu vadība vienuviet.</p></div>
+  <ul class="service-list">
+    <li>
+      <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="m8 30 24-20 24 20M15 25v29h34V25M27 54V38h10v16M8 58h48"/></svg>
+      <h3>Būvdarbi un atjaunošana</h3>
+      <p>Ēku būvdarbi, pārbūve un atjaunošana. Uzmanība materiāliem, konstrukcijām un detaļām.</p>
+      <a href="#kontakti" data-service="Būvdarbi un atjaunošana">Pieprasīt tāmi</a>
+    </li>
+    <li>
+      <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M18 13H9v44h43V13h-9M24 8h16v12H24zM18 32l4 4 7-8M34 32h10M18 46l4 4 7-8M34 46h10"/></svg>
+      <h3>Būvdarbu vadība</h3>
+      <p>Darbu organizēšana, procesa koordinēšana un uzraudzība, lai izpilde atbilst projektam un termiņiem.</p>
+      <a href="#kontakti" data-service="Būvdarbu vadība">Pārrunāt projektu</a>
+    </li>
+    <li>
+      <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M24 8h16v16H24zM7 43h16v14H7zM41 43h16v14H41zM32 24v10M15 43v-9h34v9M32 34v19"/></svg>
+      <h3>Elektronisko sakaru tīkli</h3>
+      <p>Sakaru sistēmu un tīklu projektēšana, būvdarbu vadīšana un būvuzraudzība.</p>
+      <a href="#kontakti" data-service="Elektronisko sakaru sistēmas">Pārrunāt tīklu</a>
+    </li>
+  </ul>
+</section>
+
+<section class="about section" id="par-mums">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2>Aiz katra darba —<br>cilvēki, kuriem tas rūp.</h2>
+      <p>Esam būvniecības uzņēmums no Salaspils. Apvienojam ēku būvdarbu vadību ar zināšanām elektronisko sakaru sistēmās un tīklos.</p>
+      <p>Mūsu pieeja ir vienkārša: iedziļināties iecerē, izrunāt būtisko un pievērst uzmanību darbam no sākuma līdz beigām.</p>
+      <dl class="facts">
+        <div><dt>Būvkomersanta reģistrācijas numurs</dt><dd>10000-R</dd></div>
+        <div><dt>Būvkomersantu reģistrā kopš</dt><dd>2012</dd></div>
+      </dl>
+    </div>
+    <picture class="about-photo">
+      <source srcset="assets/birojs-vestibils.webp" type="image/webp">
+      <img src="assets/birojs-vestibils.jpg" width="1800" height="1350" loading="lazy" alt="Gaišs vestibils ar melnu griestu režģi, gaismas līnijām un zaļām kolonnām">
+    </picture>
+  </div>
+</section>
+
+<section class="projects section" id="objekti">
+  <div class="section-heading wrap"><h2>Meistarība<br>redzama darbā.</h2><p>Objekti, telpas un detaļas.<br>Apskatiet tuvāk mūsu darbu fotogrāfijas.</p></div>
+  <div class="project-grid wrap">
+    <figure>
+      <button class="project-image" type="button" aria-label="Palielināt objekta foto"><picture>
+        <source srcset="assets/birojs-sesstura-griesti.webp" type="image/webp">
+        <img src="assets/birojs-sesstura-griesti.jpg" width="1800" height="1350" loading="lazy" alt="Biroja telpa ar sešstūra akustiskajiem griestu paneļiem, gaismekļiem un stikla starpsienām">
+      </picture><span class="zoom-label">Apskatīt tuvāk <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <figcaption>Biroja telpas ar akustiskajiem griestiem un stikla starpsienām</figcaption>
+    </figure>
+    <figure>
+      <button class="project-image" type="button" aria-label="Palielināt objekta foto"><picture>
+        <source srcset="assets/birojs-atverta-telpa.webp" type="image/webp">
+        <img src="assets/birojs-atverta-telpa.jpg" width="1800" height="1350" loading="lazy" alt="Atvērtā biroja zona ar koka līstīšu griestiem, LED gaismekļiem un akustiskajām sienām">
+      </picture><span class="zoom-label">Apskatīt tuvāk <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <figcaption>Atvērtā biroja zona ar līstīšu griestiem un apgaismojumu</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="process section" id="process">
+  <div class="wrap">
+    <div class="section-heading"><h2>Skaidrs process.<br>Mierīgāks prāts.</h2><a class="text-link" href="#kontakti">Sākt ar sarunu</a></div>
+    <ol class="steps">
+      <li><h3>Iepazīstam ieceri</h3><p>Izrunājam vajadzības, apskatām situāciju un noskaidrojam, kas jums ir svarīgākais.</p></li>
+      <li><h3>Vienojamies par plānu</h3><p>Precizējam darba apjomu, risinājumus, izmaksas un darbu izpildes secību.</p></li>
+      <li><h3>Ķeramies pie darba</h3><p>Organizējam darbus un uzturam saziņu, lai jūs zinātu, kā virzās jūsu projekts.</p></li>
+      <li><h3>Novērtējam rezultātu</h3><p>Kopā izskatām paveikto un pārliecināmies par atbilstību norunātajam.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="partners section" id="partneri">
+  <div class="wrap partner-heading"><h2>Sadarbības partneri</h2><button class="motion-toggle" type="button" aria-pressed="false">Apturēt lentu</button></div>
+  <div class="partner-marquee">
+    <ul class="partner-track">
+      <li><a href="https://www.lmt.lv" target="_blank" rel="noopener"><img class="logo-lmt" src="assets/partners/lmt.svg" width="112" height="40" alt="LMT" loading="lazy"></a></li>
+      <li><a href="https://www.knauf.lv" target="_blank" rel="noopener"><img class="logo-knauf" src="assets/partners/knauf.svg" width="74" height="38" alt="Knauf" loading="lazy"></a></li>
+      <li><a href="https://sadalestikls.lv" target="_blank" rel="noopener"><img class="logo-st" src="assets/partners/sadales-tikls.png" width="381" height="160" alt="Sadales tīkls" loading="lazy"></a></li>
+      <li><a href="https://latvenergo.lv" target="_blank" rel="noopener"><img class="logo-le" src="assets/partners/latvenergo.png" width="540" height="93" alt="Latvenergo" loading="lazy"></a></li>
+      <li><a href="https://www.nva.iem.gov.lv" target="_blank" rel="noopener"><img class="logo-nva" src="assets/partners/nodrosinajuma-valsts-agentura.png" width="284" height="96" alt="Nodrošinājuma valsts aģentūra" loading="lazy"></a></li>
+      <li><a href="https://www.mod.gov.lv" target="_blank" rel="noopener"><img class="logo-am" src="assets/partners/aizsardzibas-ministrija.png" width="436" height="326" alt="Aizsardzības ministrija" loading="lazy"></a></li>
+    </ul>
+    <ul class="partner-track" aria-hidden="true">
+      <li><a href="https://www.lmt.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-lmt" src="assets/partners/lmt.svg" width="112" height="40" alt="" loading="lazy"></a></li>
+      <li><a href="https://www.knauf.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-knauf" src="assets/partners/knauf.svg" width="74" height="38" alt="" loading="lazy"></a></li>
+      <li><a href="https://sadalestikls.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-st" src="assets/partners/sadales-tikls.png" width="381" height="160" alt="" loading="lazy"></a></li>
+      <li><a href="https://latvenergo.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-le" src="assets/partners/latvenergo.png" width="540" height="93" alt="" loading="lazy"></a></li>
+      <li><a href="https://www.nva.iem.gov.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-nva" src="assets/partners/nodrosinajuma-valsts-agentura.png" width="284" height="96" alt="" loading="lazy"></a></li>
+      <li><a href="https://www.mod.gov.lv" target="_blank" rel="noopener" tabindex="-1"><img class="logo-am" src="assets/partners/aizsardzibas-ministrija.png" width="436" height="326" alt="" loading="lazy"></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact section" id="kontakti">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h2>Jums ir iecere?<br>Sāksim ar sarunu.</h2>
+      <p class="contact-lead">Pastāstiet, ko vēlaties paveikt. Kopā noskaidrosim nākamo soli.</p>
+      <a class="phone" href="tel:+37129354519">+371 29 354 519</a>
+      <dl class="contact-list">
+        <div><dt>Vispārīgi jautājumi</dt><dd><a href="mailto:info@savs.lv">info@savs.lv</a></dd></div>
+        <div><dt>Tāmes un cenu piedāvājumi</dt><dd><a href="mailto:tames@savs.lv">tames@savs.lv</a></dd></div>
+        <div><dt>Adrese</dt><dd><address>Rīgas iela 115 k-3, Salaspils<br>Salaspils novads, LV-2169</address></dd></div>
+      </dl>
+    </div>
+    <form id="project-form">
+      <h3>Pastāstiet par darbu</h3>
+      <div class="form-row">
+        <label>Jūsu vārds<input name="name" autocomplete="name" placeholder="Vārds, uzvārds" required maxlength="100"></label>
+        <label>Tālrunis<input name="phone" type="tel" autocomplete="tel" placeholder="+371" maxlength="30"></label>
+      </div>
+      <label>E-pasts<input name="email" type="email" autocomplete="email" placeholder="jusu@epasts.lv" required maxlength="150"></label>
+      <label>Kas jums nepieciešams?<select name="service"><option value="">Izvēlieties pakalpojumu</option><option>Būvdarbi un atjaunošana</option><option>Būvdarbu vadība</option><option>Elektronisko sakaru sistēmas</option><option>Cita iecere</option></select></label>
+      <label>Īsumā par darbu<textarea name="message" placeholder="Darbu veids, atrašanās vieta, vēlamais termiņš" required minlength="10" maxlength="5000" rows="4"></textarea></label>
+      <button type="submit" class="button">Sagatavot e-pastu</button>
+      <p class="form-note">Vēstule atvērsies jūsu e-pasta programmā. Nosūtīšanu apstiprināsiet tur.</p>
+      <p id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<dialog class="lightbox" aria-labelledby="photo-caption"><button type="button" class="lightbox-close" aria-label="Aizvērt foto">Aizvērt <span aria-hidden="true">×</span></button><img alt=""><p id="photo-caption"></p></dialog>
+<footer>
+  <div class="wrap footer-row">
+    <img src="assets/logo.svg" width="94" height="101" alt="SAVS meistars">
+    <p>SIA „SAVS meistars”, reģ. Nr. 40103570458<br>© <span id="year">2026</span></p>
+    <a href="#">Uz augšu</a>
+  </div>
+</footer>
+</body>
+</html>
